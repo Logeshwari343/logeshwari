@@ -1,0 +1,30 @@
+echo "Takshashila University"
+echo "student mark list"
+read a
+echo "enter the enroll no:"
+read b
+echo "enter the student name:"
+read c
+echo "enter the java mark:"
+read d
+echo "enter the Linux mark:"
+read e
+echo "report"
+total=$((c + d + e))
+average=$((total / 3))
+echo "Total: $total"
+echo "Average: $average"
+if[ $total -ge 150 ]; then
+  echo "Result: pass"
+else
+  echo "Result: Fail"
+fi
+if [ $total -ge 250 ];then
+  echo "Grade: O grade"
+elif [ $total -ge 200 ]; then
+   echo "Grade: A grade"
+elif [ $total -ge 150 ]; then
+    echo "Grade: B grade"
+else
+     echo "Grade: C grade"
+fi
