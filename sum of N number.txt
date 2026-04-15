@@ -1,0 +1,4 @@
+echo "Enter a number:"
+read n
+sum=$((n * (n + 1) / 2))
+echo "sum of first $n number is: $sum"
